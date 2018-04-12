@@ -1,0 +1,136 @@
+.footer {
+  background-color: white;
+  color: black;
+  font-weight: 300;
+  margin: -50px 0;
+}
+
+.footer-container{
+    padding: 0px 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footers-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-header{
+  color: black;
+  font-weight: bold;
+}
+
+.social-header{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.social-content {
+    padding: 10px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-gap: 250px;
+}
+
+.social-content img{
+    margin: 10px 10px;
+    height: 32px;
+}
+
+.social_row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;    
+}
+
+.app_row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+
+@media all and (max-width: 980px) {
+      .footers-content {
+          grid-template-columns: 1fr 1fr;
+      }
+
+      .social-content{
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+
+  @media all and (max-width: 736px) {
+      .footers-content {
+          grid-template-columns: 1fr;
+      }
+
+      .social-content{
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+      }
+
+      .social_row{
+        justify-content: center;      
+      }
+    
+      .app_row{
+        justify-content: center;
+      }
+  }
+  @media all and (max-width: 480px) {
+    .footer-container{
+        padding: 0px 60px; 
+    }
+ 
+      .footers-content {
+          grid-template-columns: 1fr;
+      }
+
+      .social-header{
+       font-size: 20px;
+      }
+
+      /* .social-content{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+
+      .social-content img{
+        height: 16px;
+     }
+
+      .social_row{
+        justify-content: center;      
+      }
+    
+      .app_row{
+        justify-content: center;
+      } */
+  }

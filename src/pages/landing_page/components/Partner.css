@@ -1,0 +1,76 @@
+.company-content {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "microsoft comptia ec oracle aws"; */
+    opacity: .7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logo img{
+  width: 100px;
+  margin: 5px 15px;
+}
+
+.comptia{
+    grid-area: comptia;
+    width: 100px;
+    margin: 15px 15px;
+  }
+
+  .ec{
+    grid-area: ec;
+    width: 100px;
+    margin: -7px 15px;
+  }
+
+  .oracle{
+    grid-area: oracle;
+    width: 100px;
+    margin: -7px 15px;
+  }
+
+  .aws{
+    grid-area: aws;
+    width: 100px;
+    margin: -7px 15px;
+  }
+
+.company-container{
+  margin-bottom: 50px;
+  padding: 30px 100px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EBF7FE;
+}
+
+@media all and (max-width: 980px) {
+    .company-content {
+        grid-template-areas: ". microsoft comptia ec ."
+                           ". oracle . aws .";
+    }
+}
+
+@media all and (max-width: 736px) {
+    .company-content {
+        grid-template-areas: ". microsoft comptia ec ."
+                           ". oracle . aws .";
+    }
+
+}
+@media all and (max-width: 480px) {
+    .company-container{
+        margin-bottom: 50px;
+        padding: 30px 10px; 
+      }
+}
